@@ -22,7 +22,7 @@
     "react-router-dom": "^5.0.0",
     "react-scripts": "^3.0.0",
     "screenfull": "^4.2.0",
-    "typescript": "3.4.4"
+    "typescript": "^3.4.5"
   },
   "scripts": {
     "start": "react-app-rewired start",
@@ -34,10 +34,16 @@
   "eslintConfig": {
     "extends": "react-app"
   },
-  "browserslist": [
-    ">0.2%",
-    "not dead",
-    "not ie <= 11",
-    "not op_mini all"
-  ]
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
 }
