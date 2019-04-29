@@ -1,0 +1,10 @@
+.main-sidebar {
+    min-height: 354px;
+    height: calc(100vh - 54px);
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.main-body {
+    height: calc(100vh - 54px);
+}
