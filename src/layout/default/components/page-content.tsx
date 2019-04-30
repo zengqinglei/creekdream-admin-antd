@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Layout } from "antd";
-import './page-content.css';
+import "./page-content.css";
 
 const { Content } = Layout;
 
