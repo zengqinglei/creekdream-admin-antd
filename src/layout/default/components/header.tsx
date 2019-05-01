@@ -8,6 +8,7 @@ import { AppInfo } from "../../../core/models/app-info";
 import { UserInfo } from "../../../core/models/user-info";
 import { logout } from "../../../core/store/user/action";
 import "./header.css";
+import logo from "../../../asserts/image/logo.svg";
 
 interface Props {
   appinfo: AppInfo;
@@ -144,7 +145,7 @@ export const LayoutHeader = connect(
             className="title"
             style={appinfo.collapsed ? { width: "79px" } : { width: "199px" }}
           >
-            <img className="logo" alt={appinfo.name} src="/favicon.ico" />
+            <img className="logo" alt={appinfo.name} src={logo} />
             <span hidden={appinfo.collapsed}>{appinfo.name}</span>
           </div>
           <div className="bar">

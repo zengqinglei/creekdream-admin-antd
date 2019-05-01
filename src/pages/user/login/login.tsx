@@ -7,6 +7,7 @@ import { login } from "../../../core/store/user/action";
 import { connect } from "react-redux";
 import { UserInfo } from "../../../core/models/user-info";
 import { History } from "history";
+import logo from "../../../asserts/image/logo.svg";
 
 interface LoginFormProps extends FormComponentProps {
   login: (user: UserInfo) => void;
@@ -35,7 +36,7 @@ class LoginForm extends Component<LoginFormProps> {
       <>
         <div className="login-header">
           <div>
-            <img className="logo" alt="统一中后台" src="/favicon.ico" />
+            <img className="logo" alt="统一中后台" src={logo} />
             <span className="title">统一中后台</span>
           </div>
           <p className="description">
