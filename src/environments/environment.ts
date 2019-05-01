@@ -2,5 +2,5 @@
 export const environment = {
   /** 服务端Url */
   SERVER_URL: `http://dev.api.com`,
-  useHash: true
+  useHash: false
 };
